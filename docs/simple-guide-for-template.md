@@ -1,6 +1,6 @@
 # HTML模板常用标签设置整理
 
-工作中免不了要接触到HTML，通常都会用编辑器的代码片段，或者诸如Emmet这类自动完成的工具生成HTML模板。对于PC端的Web页面，总会涉及到很多标签的设置问题，今天作个整理归类，方便参考。
+工作中免不了要接触到HTML，通常都会用编辑器的代码片段，或者诸如Emmet这类自动完成的工具生成HTML模板。无论是PC端的Web页面，还是移动端Web App开发，都会涉及到很多标签的设置问题，今天作个整理归类，方便参考。
 
 - __DOCTYPE设置，推荐使用HTML5 doctype__
 
@@ -55,7 +55,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 ```
 
-在IE8中引入了文档兼容性这个东西，刚开始主要是对IE6的兼容性模式扩展。`content`属性有很多可选值，但是推荐优先使用最新版IE兼容性模式。参考资料：
+在IE8中引入了文档兼容性这个东西，刚开始主要是对IE6的兼容性模式进行扩展，后面也就都承袭了（PS：貌似IE11中不再支持了，有待考究）。`content`属性有很多可选值，但是推荐优先使用最新版IE兼容性模式。参考资料：
 
 > - [MSDN - 定义文档兼容性](http://msdn.microsoft.com/zh-cn/library/cc288325\(v=vs.85\).aspx)
 > - [Stackoverflow - IE兼容性模式之间的差异讨论](http://stackoverflow.com/questions/6771258/whats-the-difference-if-meta-http-equiv-x-ua-compatible-content-ie-edge-e)
@@ -77,7 +77,7 @@
 
 > 关于国内双核浏览器的兼容模式资料来源于QQ群中网友的讨论，具体情况没有详细测试。
 
-— __favicon设置__
+- __favicon设置__
 
 ```html
 <link type="image/x-icon" rel="shortcut icon" href="/favicon.ico" /> <!-- retina screen ? -->
@@ -102,7 +102,7 @@
 > - [Metadata](http://www.w3.org/wiki/HTML/Training/Metadata)
 > - [&lt;meta name="robots"&gt;标记设置](http://msdn.microsoft.com/zh-cn/library/ff724037\(v=expression.40\).aspx)
 
-— __针对移动设备的`viewport`设置__
+- __针对移动设备的`viewport`设置__
 
 ```html
 <meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no, minimal-ui" />
@@ -122,7 +122,7 @@
 
 > - [一份网友整理的响应式设计指南](http://www.adamkaplan.me/grid/)
 > - [PPK整理的viewport浏览器兼容性列表](http://www.quirksmode.org/mobile/tableViewport.html)
-> - [PPK编写的两边关于viewport的文章](http://www.quirksmode.org/blog/archives/2010/06/a_tale_of_two_v_1.html) - PS：网上可以找到好几个版本的译文。
+> - [PPK编写的两边关于viewport的文章](http://www.quirksmode.org/blog/archives/2010/06/a_tale_of_two_v_1.html) - PS：网上可以找到好多版本的译文。
 > - [Apple开发者中心关于viewport的文档](https://developer.apple.com/library/ios/documentation/appleapplications/reference/safariwebcontent/usingtheviewport/usingtheviewport.html)
 > - [iOS 7.1 发布日志](https://developer.apple.com/library/iOS/releasenotes/General/RN-iOSSDK-7.1/index.html)
 
@@ -235,7 +235,7 @@ PS：貌似`apple-touch-icon-precomposed`这个配置在苹果的新产品中不
 - [W3C HTML5规范之文档元数据](http://www.w3.org/TR/html5/document-metadata.html)
 - [你需要知道的HTML meta](http://blog.liming.it/?p=27) - 眼花缭乱，不要慌，并不是都得用上。收集在这里以备参考。
 - [HTML meta标签列表 - @2010](http://code.lancepollard.com/complete-list-of-html-meta-tags/)
-- [mobile-boilerplate](https://github.com/h5bp/mobile-boilerplate) - 前人载入，后人乘凉。但不要忘了浇水。
+- [mobile-boilerplate](https://github.com/h5bp/mobile-boilerplate) - 前人种树，后人乘凉。但不要忘了浇水。
 - [favicon-cheat-sheet](https://github.com/audreyr/favicon-cheat-sheet)
 - [每个页面都应该有的18个meta标签](http://www.iacquire.com/blog/18-meta-tags-every-webpage-should-have-in-2013)
 - [Everything you always wanted to know about touch icons](http://mathiasbynens.be/notes/touch-icons)
